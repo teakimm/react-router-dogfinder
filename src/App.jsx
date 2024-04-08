@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Nav from './Nav';
 import RoutesList from './RoutesList';
 import { useState } from 'react';
+import { getDogs } from './utils';
 
 function App() {
   const [dogsFetched, setDogsFetched] = useState(false);
@@ -15,7 +16,12 @@ function App() {
     setDogData(data);
   }
 
-  if (!dogsFetched) getDogs();
+  if (!dogsFetched) {
+    const otherData = (async () => await getDogs())();
+    const awaitedData = (async () => await otherData)();
+    console.log("otherdata", awaitedData);
+    getDogs()
+  }
 
   return (
     <div>
