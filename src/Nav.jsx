@@ -6,14 +6,14 @@ import { v4 as uuid } from "uuid";
 function Nav({ dogs }) {
 
     const dogLinks = dogs.map(dog =>
-        <Link to={`/dogs/${dog.name}`} key={uuid()}>{dog.name}</Link>
-    )
+        <Link className="btn" to={`/dogs/${dog.name}`} key={uuid()}>{dog.name}</Link>
+    );
 
     return (
-    <div>
-        {dogLinks}
-    </div>
-    )
+        <div>
+            {dogLinks}
+        </div>
+    );
 }
 
 export default Nav;

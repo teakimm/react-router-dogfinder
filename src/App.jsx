@@ -19,15 +19,15 @@ function App() {
 
   return (
     <div>
-    {dogsFetched
-      ? <div className="App">
+      {dogsFetched
+        ? <div className="App">
           <BrowserRouter>
             <Nav dogs={dogData} />
-            <RoutesList />
+            <RoutesList dogs={dogData} />
           </BrowserRouter>
         </div>
-      : <h1>Loading...</h1>
-    }
+        : <h1>Loading...</h1>
+      }
     </div>
   );
 }
