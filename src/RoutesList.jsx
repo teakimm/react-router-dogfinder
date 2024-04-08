@@ -2,6 +2,7 @@ import React from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import DogList from "./DogList";
 import DogDetails from "./DogDetails";
+import { useParams } from "react-router-dom";
 
 /** Routes to render components
  *
@@ -14,6 +15,8 @@ import DogDetails from "./DogDetails";
  * App -> RoutesList -> DogDetails, DogList
  */
 function RoutesList({ dogs }) {
+
+
     return (
         <Routes>
             <Route path="*" element={<Navigate to="/dogs" />} />

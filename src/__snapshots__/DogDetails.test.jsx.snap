@@ -1,0 +1,99 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`DogDetails component > matches snapshot 1`] = `
+<div>
+  <div
+    class="DogDetails"
+  >
+    <div
+      class="card DogDetails-card"
+      style="width: 25em;"
+    >
+      <img
+        alt="perry"
+        class="card-img-top"
+        src="/public/perry.jpg"
+      />
+      <div
+        class="card-body"
+      >
+        <h5
+          class="card-title"
+        >
+          Perry
+        </h5>
+        <h6>
+          Age: 
+          4
+        </h6>
+        <ul>
+          <li>
+            Perry loves all humans.
+          </li>
+          <li>
+            Perry demolishes all snacks.
+          </li>
+          <li>
+            Perry hates the rain.
+          </li>
+        </ul>
+        <a
+          class="btn btn-primary"
+          href="/dogs"
+        >
+          Go Back
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DogDetails component > renders without crashing 1`] = `
+<div>
+  <div
+    class="DogDetails"
+  >
+    <div
+      class="card DogDetails-card"
+      style="width: 25em;"
+    >
+      <img
+        alt="perry"
+        class="card-img-top"
+        src="/public/perry.jpg"
+      />
+      <div
+        class="card-body"
+      >
+        <h5
+          class="card-title"
+        >
+          Perry
+        </h5>
+        <h6>
+          Age: 
+          4
+        </h6>
+        <ul>
+          <li>
+            Perry loves all humans.
+          </li>
+          <li>
+            Perry demolishes all snacks.
+          </li>
+          <li>
+            Perry hates the rain.
+          </li>
+        </ul>
+        <a
+          class="btn btn-primary"
+          href="/dogs"
+        >
+          Go Back
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

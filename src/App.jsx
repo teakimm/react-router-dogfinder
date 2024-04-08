@@ -3,7 +3,6 @@ import { BrowserRouter } from 'react-router-dom';
 import Nav from './Nav';
 import RoutesList from './RoutesList';
 import { useState } from 'react';
-import { getDogs } from './utils';
 
 
 
@@ -30,8 +29,6 @@ function App() {
   }
 
   if (!dogsFetched) {
-    // const otherData = (async () => await getDogs())();
-    // const awaitedData = (async () => await otherData)();
     getDogs();
   }
 
