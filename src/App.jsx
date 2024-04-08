@@ -17,9 +17,8 @@ function App() {
   }
 
   if (!dogsFetched) {
-    const otherData = (async () => await getDogs())();
-    const awaitedData = (async () => await otherData)();
-    console.log("otherdata", awaitedData);
+    // const otherData = (async () => await getDogs())();
+    // const awaitedData = (async () => await otherData)();
     getDogs()
   }
 
