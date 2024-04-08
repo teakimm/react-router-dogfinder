@@ -8,8 +8,8 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .App-Loading {
+    animation: App-loading infinite 0.5s linear;
   }
 }
 
@@ -28,11 +28,17 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+@keyframes App-loading {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-Loading {
+  margin-top: 2em;
+  text-align: center;
 }

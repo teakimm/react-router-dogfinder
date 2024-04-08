@@ -1,14 +1,29 @@
 import './App.css';
-import { BrowserRouter, Link } from 'react-router-dom';
+import { BrowserRouter, Link, Navigate, Route } from 'react-router-dom';
 import RoutesList from './RoutesList';
 import { useState } from 'react';
 import { v4 as uuid } from "uuid";
 import { useParams } from 'react-router-dom';
 import "./DogDetails.css";
+import NotFound from './NotFound';
 
+/** Renders card for a dog
+ *
+ * state:
+ * none
+ *
+ * props:
+ * -dogs [{name, age, ...}]
+ *
+ * App -> RouteList -> DogDetails
+ */
 function DogDetails({ dogs }) {
     const { name } = useParams();
-    const [dog] = dogs.filter(dog => dog.name === name);
+    const dog = dogs.find(dog => dog.name.toLowerCase() === name.toLowerCase());
+
+    if (!dog) {
+        return <NotFound />;
+    }
 
     return (
         <div className="DogDetails">

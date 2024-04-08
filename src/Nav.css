@@ -1,3 +1,17 @@
 .Nav {
   background-color: goldenrod;
 }
+
+a {
+  margin: 1%;
+}
+
+.NavLink {
+  text-decoration: none;
+  color: black;
+}
+
+.NavLink.active {
+  text-decoration: none;
+  color: rgb(46, 101, 255)
+}

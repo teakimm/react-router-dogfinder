@@ -3,7 +3,16 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import DogList from "./DogList";
 import DogDetails from "./DogDetails";
 
-
+/** Routes to render components
+ *
+ * state:
+ * none
+ *
+ * props:
+ * -dogs: [{name, age, ...}]
+ *
+ * App -> RoutesList -> DogDetails, DogList
+ */
 function RoutesList({ dogs }) {
     return (
         <Routes>

@@ -5,6 +5,19 @@ import RoutesList from './RoutesList';
 import { useState } from 'react';
 import { getDogs } from './utils';
 
+
+
+/** App
+ *
+ * state:
+ * -dogsFetched: boolean
+ * -dogData: [{name, age, ...}]
+ *
+ * props:
+ * none
+ *
+ * App -> Nav, RoutesList
+*/
 function App() {
   const [dogsFetched, setDogsFetched] = useState(false);
   const [dogData, setDogData] = useState([]);
@@ -19,7 +32,7 @@ function App() {
   if (!dogsFetched) {
     // const otherData = (async () => await getDogs())();
     // const awaitedData = (async () => await otherData)();
-    getDogs()
+    getDogs();
   }
 
   return (
@@ -31,7 +44,7 @@ function App() {
             <RoutesList dogs={dogData} />
           </BrowserRouter>
         </div>
-        : <h1>Loading...</h1>
+        : <h1 className='App-Loading'>Loading...</h1>
       }
     </div>
   );
