@@ -22,7 +22,7 @@ function DogList({ dogs }) {
             <img className="card-img-top" src={`/public/${dog.src}.jpg`} alt={dog.src} />
             <div className="card-body">
                 <h5 className="card-title">{dog.name}</h5>
-                <Link className="btn btn-primary" to={`/dogs/${dog.name.toLowerCase()}`}>{`More about ${dog.name}`}</Link>
+                <Link className={`btn btn-primary ${dog.name}`} to={`/dogs/${dog.name.toLowerCase()}`}>{`More about ${dog.name}`}</Link>
             </div>
         </div>
     );

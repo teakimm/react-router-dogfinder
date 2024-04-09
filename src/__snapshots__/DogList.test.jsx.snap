@@ -1,0 +1,85 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`DogList component > matches snapshot 1`] = `
+<div>
+  <div
+    class="DogList"
+  >
+    <div
+      class="card"
+      style="width: 18em;"
+    >
+      <img
+        alt="whiskey"
+        class="card-img-top"
+        src="/public/whiskey.jpg"
+      />
+      <div
+        class="card-body"
+      >
+        <h5
+          class="card-title"
+        >
+          Whiskey
+        </h5>
+        <a
+          class="btn btn-primary Whiskey"
+          href="/dogs/whiskey"
+        >
+          More about Whiskey
+        </a>
+      </div>
+    </div>
+    <div
+      class="card"
+      style="width: 18em;"
+    >
+      <img
+        alt="duke"
+        class="card-img-top"
+        src="/public/duke.jpg"
+      />
+      <div
+        class="card-body"
+      >
+        <h5
+          class="card-title"
+        >
+          Duke
+        </h5>
+        <a
+          class="btn btn-primary Duke"
+          href="/dogs/duke"
+        >
+          More about Duke
+        </a>
+      </div>
+    </div>
+    <div
+      class="card"
+      style="width: 18em;"
+    >
+      <img
+        alt="perry"
+        class="card-img-top"
+        src="/public/perry.jpg"
+      />
+      <div
+        class="card-body"
+      >
+        <h5
+          class="card-title"
+        >
+          Perry
+        </h5>
+        <a
+          class="btn btn-primary Perry"
+          href="/dogs/perry"
+        >
+          More about Perry
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
